@@ -15,7 +15,7 @@ def criar_tabela_estoque():
 
     try:
         with open(database_sql, "r") as file:
-            script_sql = file.read()  # Correção aqui
+            script_sql = file.read()  
 
         with conexao.cursor() as cursor:
             cursor.execute(script_sql)
